@@ -1,14 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+
 #content{
     max-width: 1600px;
     margin: 0 auto;
 }
 
 body{
-    background-color:#F6FFE0
+    background-color:#F6FFE0;
+    font-family: "Fredoka", Helvetica, sans-serif;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
 }
 
 header{
     background-color: #77A33A;
+    font-family: "Fredoka", Helvetica, sans-serif;
+}
+
+h2{
+    margin: 0;
+}
+
+.home-title{
+    font-family: "Fredoka", Helvetica, sans-serif;
+    font-size: 2em;
+    margin-top: 10px;
 }
 
 #background{
@@ -20,6 +37,7 @@ nav a{
     text-align: center;
     background-color:#77A33A;
     text-decoration: none;
+    padding: 35px;
 }
 
 nav a:hover{
@@ -29,6 +47,11 @@ nav a:hover{
 .book, .join{
     background-color: #F6FFE0;
     text-decoration: none;
+    font-family: "Fredoka", Helvetica, sans-serif;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 
 .book:hover, .join:hover{
@@ -47,12 +70,26 @@ main section{
     text-align: center;
 }
 
+main section img{
+    box-sizing: border-box;
+}
+
 .msg{
     background-color:#27BBD2 ;
+    line-height: 1.5em;
+    padding: 35px;
+}
+
+.msg p{
+    font-family: "Fredoka", Helvetica, sans-serif;
+    font-size: .8em ;
+    padding-bottom: 15px;
 }
 
 footer{
     background-color: #1E7991;
+    padding: 25px 50px;
+    margin-top: 200px;
 }
 
 footer a{
@@ -67,14 +104,31 @@ footer p a:hover{
     text-decoration: underline;
 }
 
+footer .social img{
+    padding-top: 15px;
+}
+
 .logo{
     width: 80px;
 }
 
+#logo_link{
+    padding-top: 5px;
+}
+
 .icon{
     width: 80px;
+    padding-top: 10px;
 }
 
 #hero-img{
     width: 100%;
+}
+
+.rivers-card, .camping-card, .rapids-card{
+    margin:200px 0;
+}
+
+.card-img{
+    border: black 10px;
 }
