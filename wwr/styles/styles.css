@@ -24,6 +24,11 @@ h2{
     margin: 0;
 }
 
+.home-grid{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+
 .home-title{
     font-family: "Fredoka", Helvetica, sans-serif;
     font-size: 2em;
@@ -100,7 +105,7 @@ main section img{
     padding: 35px;
     grid-column: 6/10;
     grid-row: 6/7;
-    box-shadow: 5px 5px 10px #F6FFE0;
+    box-shadow: 5px 5px 10px black;
 }
 
 .msg p{
@@ -167,12 +172,13 @@ footer .social img{
 
 .rivers-card, .camping-card, .rapids-card{
     margin:200px 0;
+    
 }
 
 .card-img{
-    border:10px #77A33A;
+    border: 5px, #77A33A;
     transition: transform .5s;
-    box-shadow: 5px 5px 10px #F6FFE0;
+    box-shadow: 5px 5px 10px black;
 }
 
 .card-img:hover{
@@ -203,7 +209,7 @@ footer .social img{
     width: 100%;
     grid-column: 2/7;
     grid-row: 5/8;
-    box-shadow: 5px 5px 10px #F6FFE0;
+    box-shadow: 5px 5px 10px black;
 }
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
