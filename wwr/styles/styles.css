@@ -256,18 +256,18 @@ footer .social img{
 
 
 /* page 2 styles */
-    .main-content {
+    .main-content-boxes {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 20px;
         padding: 20px 0;
     }
-    .main-content .item, .main-content .image {
+    .main-content-boxes .item, .main-content-boxes .image {
         background-color: #27BBD2;
         padding: 20px;
         text-wrap: balance;
     }
-    .main-content .image {
+    .main-content-boxes .image {
         display: flex;
         justify-content: center;
         align-items: center;
