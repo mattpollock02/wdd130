@@ -256,36 +256,6 @@ footer .social img{
 
 
 /* page 2 styles */
-    * {
-
-    }
- 
-    .container {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 20px;
-    }
-    .header, .footer {
-        text-align: center;
-        background-color: #1E7991;
-        color: white;
-        padding: 20px 0;
-    }
-    .header img {
-        max-width: 100px;
-    }
-    .nav {
-        display: flex;
-        justify-content: center;
-        gap: 20px;
-        padding: 20px 0;
-        background-color: #1E7991;
-        color: white;
-    }
-    .nav a {
-        color: white;
-        text-decoration: none;
-    }
     .main-content {
         display: grid;
         grid-template-columns: 1fr 1fr;
