@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+@import url(https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap);
 
 #content{
     max-width: 1600px;
@@ -176,7 +176,6 @@ footer .social img{
 }
 
 .card-img{
-    border: 5px, #77A33A;
     transition: transform .5s;
     box-shadow: 5px 5px 10px black;
 }
@@ -257,4 +256,61 @@ footer .social img{
 
 
 /* page 2 styles */
+    * {
 
+    }
+ 
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    .header, .footer {
+        text-align: center;
+        background-color: #1E7991;
+        color: white;
+        padding: 20px 0;
+    }
+    .header img {
+        max-width: 100px;
+    }
+    .nav {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px 0;
+        background-color: #1E7991;
+        color: white;
+    }
+    .nav a {
+        color: white;
+        text-decoration: none;
+    }
+    .main-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        padding: 20px 0;
+    }
+    .main-content .item, .main-content .image {
+        background-color: #27BBD2;
+        padding: 20px;
+        text-wrap: balance;
+    }
+    .main-content .image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+        color: #1E7991;
+    }
+    .footer .social, .footer .links {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        padding: 10px 0;
+    }
+    .footer .social a, .footer .links a {
+        color: white;
+        text-decoration: none;
+    }
