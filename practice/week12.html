@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 12 Component Activity</title>
+    <link rel="stylesheet" href="styles/week12.css">
+</head>
+
+<body>
+    <h1>Lake Tahoe</h1>
+    <button class="accordion">Introduction to Lake Tahoe</button>
+    <div class="panel">
+        <p>Nestled in the Sierra Nevada mountains, Lake Tahoe is a natural gem straddling the border of California and
+            Nevada. Renowned for its stunningly clear, blue waters and picturesque alpine setting, it is one of the
+            largest freshwater lakes in the United States. Visitors are captivated by its beauty and the serenity it
+            offers, making it a top destination for nature enthusiasts year-round.</p>
+    </div>
+
+    <button class="accordion">Activities and Attractions</button>
+    <div class="panel">
+        <p>Lake Tahoe offers an abundance of activities for visitors of all interests. During the winter, the region
+            becomes a haven for skiers and snowboarders, with world-class resorts like Heavenly and Squaw Valley. In the
+            summer, outdoor enthusiasts flock to its shores for kayaking, paddleboarding, hiking, and mountain biking.
+            Emerald Bay, a designated National Natural Landmark, is a must-see with its iconic Fannette Island and
+            breathtaking viewpoints.</p>
+    </div>
+
+    <button class="accordion">Preserving Lake Tahoe's Beauty</button>
+    <div class="panel">
+        <p>With its unique ecosystem and fragile clarity, Lake Tahoe faces ongoing environmental challenges. Efforts are
+            being made to preserve its pristine waters through conservation programs and sustainable tourism practices.
+            Visitors are encouraged to respect the environment by adhering to leave-no-trace principles and
+            participating in local clean-up initiatives. Together, these actions ensure that Lake Tahoe's natural beauty
+            can be enjoyed by future generations.</p>
+    </div>
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the panel */
+    this.classList.toggle("active");
+
+    /* Toggle between hiding and showing the active panel */
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
+}
+    </script>
+</body>
+
+</html>
