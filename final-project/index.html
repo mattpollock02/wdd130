@@ -41,38 +41,101 @@
         </section>
     </main>
     <p1>
-        Matthew Pollock brings a unique blend of expertise, creativity, and professionalism to every project he tackles.
-        His portfolio highlights a diverse range of successfully completed projects across various industries,
-        showcasing his ability to deliver tailored solutions that meet the specific needs of his clients. Visitors to
-        his site will find a comprehensive overview of his skills, past work, and the services he offers, making it easy
-        to assess whether his style and approach align with their expectations.
 
-        Matthew’s personal touch sets him apart from others in his field, as he combines technical proficiency with a
-        passion for collaboration and results. His work is driven by a commitment to quality and a deep understanding of
-        his clients' goals, which is evident in the testimonials and case studies featured on his site. Whether you're
-        looking for a reliable professional to bring your vision to life or seeking someone who can offer fresh,
-        innovative ideas, Matthew Pollock is the ideal partner for your next project.
+        <body>
+            <h1>Common Questions</h1>
+            <button class="accordion">Why will visitors come to this site?</button>
+            <div class="panel">
+                <p>Visitors will come to Matthew Pollock’s portfolio site to gain a comprehensive understanding of his
+                    expertise, skills, and what he can uniquely offer as a professional. They’ll be drawn to the site by
+                    the need to assess his qualifications for a project, view past work, and understand what sets him
+                    apart from others in his field. By exploring the site, they hope to gauge whether Matthew's style
+                    and skill set align with their needs and expectations. Visitors are likely to have questions like:
+                    “What are Matthew’s areas of expertise?” “What past projects has he completed?” and “How can I
+                    contact or hire him?” They might also want to see samples of his work, a summary of his professional
+                    background, or a clear breakdown of services offered.
+
+                    Visitors will likely have a range of questions. They may want to know, “What specific areas of
+                    expertise does Matthew Pollock have?” “What are some examples of projects he’s successfully
+                    completed?” “What services does he offer, and are they relevant to my needs?” “What kind of clients
+                    or industries has he worked with?” and “How do I get in touch or begin a collaboration?” They’ll
+                    also be interested in practical details like his work process, testimonials from previous clients,
+                    and perhaps his availability or pricing structure. Having these questions answered directly will
+                    make it easier for potential clients or collaborators to assess if Matthew is the right fit for
+                    their needs.</p>
+            </div>
+
+            <button class="accordion">Main activities on this site</button>
+            <div class="panel">
+                <p>The main activities visitors will want to complete on the site are viewing Matthew’s portfolio,
+                    reading his bio, and reaching out to him. Some may want to download his resume or explore case
+                    studies that give detailed insights into his approach and solutions for past projects. Others may be
+                    interested in connecting via a contact form, booking a consultation, or signing up for updates if he
+                    has a newsletter. For these actions, the site needs to be clear and accessible, with essential
+                    information like a portfolio of work, a downloadable resume or qualifications summary, and contact
+                    information readily available.</p>
+            </div>
+
+            <button class="accordion">Why would people choose this site over others?</button>
+            <div class="panel">
+                <p>People will choose Matthew’s site over others because it will offer a personal, authentic touch that
+                    showcases not just his technical abilities, but also his passion and commitment. This distinct
+                    approach will differentiate his site from generic portfolio templates by highlighting the unique
+                    value he brings to each project. Additionally, a user-friendly layout with intuitive navigation will
+                    make it easy for visitors to quickly find relevant information, increasing the likelihood that they
+                    will stay and engage. By featuring testimonials, detailed case studies, and insights into his
+                    creative or professional process, Matthew’s site will offer a meaningful, transparent view of his
+                    work that builds trust and encourages potential clients or collaborators to reach out, ultimately
+                    making his portfolio site a valuable and engaging resource.</p>
+            </div>
+            <script>
+                // Get all accordion buttons
+                var accordions = document.getElementsByClassName("accordion");
+
+                // Loop through all accordion buttons
+                for (var i = 0; i < accordions.length; i++) {
+                    accordions[i].addEventListener("click", function () {
+                        // Toggle the active class on the clicked button
+                        this.classList.toggle("active");
+
+                        // Get the panel (content) next to the clicked accordion
+                        var panel = this.nextElementSibling;
+
+                        // If the panel is already open, collapse it
+                        if (panel.style.maxHeight) {
+                            panel.style.maxHeight = null;
+                            panel.classList.remove('active');
+                        } else {
+                            // Otherwise, expand it
+                            panel.style.maxHeight = panel.scrollHeight + "px"; // Dynamic height based on content
+                            panel.classList.add('active');
+                        }
+                    });
+                }
+            </script>
+        </body>
+
+</html>
 
 
 
-
-    </p1>
-    <footer>
-        <p>Portfolio &copy; 2024 - Matthew Pollock</p>
-        <p><a href="site-plan-rafting.html">Site Plan</a></p>
-        <div class="social">
-            <a href="https://facebook.com" target="_blank">
-                <img src="images/facebook.png" alt="fb icon">
-            </a>
-            <a href="https://twitter.com" target="_blank">
-                <img src="images/twitter.png" alt="twitter icon">
-            </a>
-            <a href="https://instagram.com" target="_blank">
-                <img src="images/instagram.png" alt="instagram icon">
-            </a>
-        </div>
-    </footer>
+</p1>
+<footer>
+    <p>Portfolio &copy; 2024 - Matthew Pollock</p>
+    <p><a href="site-plan.html">Site Plan</a></p>
+    <div class="social">
+        <a href="https://facebook.com" target="_blank">
+            <img src="images/facebook.png" alt="fb icon">
+        </a>
+        <a href="https://twitter.com" target="_blank">
+            <img src="images/twitter.png" alt="twitter icon">
+        </a>
+        <a href="https://instagram.com" target="_blank">
+            <img src="images/instagram.png" alt="instagram icon">
+        </a>
     </div>
+</footer>
+</div>
 </body>
 
 </html>
