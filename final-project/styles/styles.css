@@ -47,6 +47,10 @@
     content: "\2796"; /* Unicode character for "minus" sign (-) */
 }
 
+.button-box{
+    text-align: center;
+}
+
 #content {
     max-width: 1600px;
     margin: 0 auto;
